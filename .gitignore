@@ -8,10 +8,35 @@ yarn-error.log*
 
 # Environment variables
 .env
+.env.local
+.env.*.local
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
 # Optional: VSCode settings
-.vscode/ 
+.vscode/
+
+# Build output
+build/
+dist/
+
+# Caches
+.cache/
+.parcel-cache/
+.next/
+.turbo/
+.nyc_output/
+coverage/
+.npm/
+.tmp/
+
+# Deployment
+.vercel/
+
+# IDEs
+.idea/
+
+# ESLint cache
+.eslintcache 
