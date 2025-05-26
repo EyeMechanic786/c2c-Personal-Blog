@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog - Clinician's Blog</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/blog">Blog</a>
+  </nav>
+  <h1>Blog Posts</h1>
+  <ul>
+    <% posts.forEach(function(post) { %>
+      <li><a href="/blog/<%= post.slug %>"><%= post.title %></a></li>
+    <% }); %>
+  </ul>
+</body>
+</html> 
