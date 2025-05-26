@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= title %> - Clinician's Blog</title>
+  <title><%= title %> - EyeMechanic</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <nav>
     <a href="/">Home</a> |
-    <a href="/blog">Blog</a>
+    <a href="/about">About</a> |
+    <a href="/blog">Blog</a> |
+    <a href="/newsletter">Newsletter</a>
   </nav>
-  <h1><%= title %></h1>
-  <article><%- content %></article>
+  <main>
+    <h1><%= title %></h1>
+    <article><%- content %></article>
+  </main>
 </body>
 </html> 

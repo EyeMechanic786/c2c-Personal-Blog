@@ -1,4 +1,13 @@
+---
+title: Learning to Code as a Clinician
+date: 2025-03-01
+layout: layout.njk
+image: https://images.unsplash.com/photo-1511174511562-5f97f4f4e0c8?auto=format&fit=crop&w=800&q=80
+---
+
 # Learning to Code as a Clinician
+
+![Stethoscope](https://images.unsplash.com/photo-1511174511562-5f97f4f4e0c8?auto=format&fit=crop&w=800&q=80)
 
 As a clinician, learning to code opens up new opportunities to improve patient care and streamline workflows. It can be challenging at first, but the rewards are worth it!
 

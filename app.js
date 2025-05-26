@@ -37,6 +37,16 @@ app.get('/blog/:slug', (req, res) => {
   });
 });
 
+// About page
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+// Newsletter page
+app.get('/newsletter', (req, res) => {
+  res.render('newsletter');
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 }); 

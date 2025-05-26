@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <style>
+    .blog-icon {
+      position: absolute;
+      top: 2em;
+      right: 2em;
+      z-index: 10;
+    }
+    @media (max-width: 900px) {
+      .blog-icon {
+        top: 1em;
+        right: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/blog/">Blog</a>
+  </nav>
+  <main style="position:relative;">
+    {# Lordicon animated icon at top right, different for each blog post #}
+    {% if title == "Learning to Code as a Clinician" %}
+      <lord-icon class="blog-icon"
+        src="https://cdn.lordicon.com/zzcjjxew.json"
+        trigger="hover"
+        colors="primary:#6366f1,secondary:#06b6d4"
+        style="width:60px;height:60px">
+      </lord-icon>
+    {% elif title == "My First Coding Project" %}
+      <lord-icon class="blog-icon"
+        src="https://cdn.lordicon.com/kthelypq.json"
+        trigger="hover"
+        colors="primary:#6366f1,secondary:#06b6d4"
+        style="width:60px;height:60px">
+      </lord-icon>
+    {% elif title == "Why Clinicians Should Learn to Code" %}
+      <lord-icon class="blog-icon"
+        src="https://cdn.lordicon.com/ehfubvwr.json"
+        trigger="hover"
+        colors="primary:#6366f1,secondary:#06b6d4"
+        style="width:60px;height:60px">
+      </lord-icon>
+    {% endif %}
+    {{ content | safe }}
+  </main>
+</body>
+</html> 
